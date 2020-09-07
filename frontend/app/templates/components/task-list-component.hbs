@@ -1,0 +1,14 @@
+<main id="tasks_wrapper">
+{{#each tasks as |taskItem|}}
+    {{task-list-item-component
+        task=taskItem
+        onComplete=(action 'onComplete')
+        onDelete=(action 'onDelete')
+    }}
+{{else}}
+<div class="no-tasks">
+    <div>כל הכבוד!</div>
+    <span class="icon">&#9786;</span>
+</div>
+{{/each}}
+</main>

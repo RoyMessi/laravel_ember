@@ -1,0 +1,8 @@
+<div class="task {{if task.is_completed "completed"}}">
+    <label class="checkbox">
+        <input type="checkbox" checked={{task.is_completed}} onchange={{action "onComplete" task}}>
+        <span class="checkmark"></span>
+    </label>
+    <div class="task-text">{{task.text}}</div>
+    <button type="button" class="btn" onclick={{action "onDelete" task}}>&times;</button>
+</div>

@@ -1,0 +1,10 @@
+{{header-component
+    addTask=(action 'addTask')
+}}
+{{task-list-component
+    tasks=model
+    onComplete=(action 'onComplete')
+    onDelete=(action 'onDelete')
+}}
+{{footer-component tasks=model}}
+{{notes-component}}

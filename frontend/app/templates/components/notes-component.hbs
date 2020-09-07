@@ -1,0 +1,7 @@
+<div id="note_wrapper">
+    {{#each items as |note index|}}
+        <div class="note {{note.noteType}} {{if note.isShown 'show'}}">
+            {{note.message}}
+        </div>
+    {{/each}}
+</div>
